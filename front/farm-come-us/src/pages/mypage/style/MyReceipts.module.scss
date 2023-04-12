@@ -1,0 +1,34 @@
+.flexbox {
+  display: flex;
+  flex-direction: column;
+
+  .noItem {
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+.centerAlignWrapper {
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin-top: 6%;
+  margin-left: 5%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: black;
+}
+
+.mt {
+  margin-top: 3%;
+}
+
+.screen {
+  height: 60vh;
+}

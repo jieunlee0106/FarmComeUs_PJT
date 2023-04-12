@@ -1,0 +1,39 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  profiles:
+    include: oauth, local
+
+  # swagger
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+
+cors:
+  enabled: true
+  allowed-origins: http://localhost:3000,https://localhost:3000,https://i8b103.p.ssafy.io/
+  allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+  allowed-headers: authorization,content-type,x-auth-token, token
+  max-age: 3600
+
+app:
+  auth:
+    token-secret: jwt key
+    token-expiry: token expiry time
+    refresh-token-expiry: refresh token expiry time
+  oauth2:
+    authorized-redirect-uris: https://i8b103.p.ssafy.io:3000/kakao
+
+  org.hibernate.SQL: debug
+  org:
+    springframework: info
+# org.hibernate.type: trace

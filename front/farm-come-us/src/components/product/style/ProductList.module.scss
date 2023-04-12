@@ -1,0 +1,29 @@
+.productList {
+  width: calc(100% - 20px);
+  display: flex;
+  list-style: none;
+  margin: 10px 10px;
+  padding: 0;
+
+  &.preview {
+    overflow-x: scroll;
+  }
+
+  &:not(.preview) {
+    flex-wrap: wrap;
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
+
+  .loading {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

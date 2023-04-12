@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  height: 4rem;
+
+  .priceSpace {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7863b;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .buyButton {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7863b;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #f7863b;
+  }
+}

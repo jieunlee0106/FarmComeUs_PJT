@@ -1,0 +1,33 @@
+.productInfoList {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 10px;
+  list-style: none;
+
+  select {
+    width: 95%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+    &:focus {
+      outline: 1px solid #777;
+    }
+
+    option {
+      width: 300%;
+    }
+  }
+
+  .infoItem {
+    margin-bottom: 16px;
+    border: none;
+  }
+}
+
+.file {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}

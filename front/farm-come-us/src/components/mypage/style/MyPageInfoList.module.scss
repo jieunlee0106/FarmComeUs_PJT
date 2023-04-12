@@ -1,0 +1,46 @@
+.infoList {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 10px;
+  list-style: none;
+
+  .infoItem {
+    margin-bottom: 16px;
+  }
+}
+
+.modal {
+  position: fixed;
+  padding: 10px;
+  z-index: 200;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  background-color: white;
+  // padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  top: 25%;
+  // left: 5%;
+  margin: 0 auto;
+  // width: 50%;
+  transition: all 0.2s ease-out;
+  border-radius: 20px;
+  &.openModal {
+    display: block;
+  }
+  &.closedModal {
+    display: hidden;
+  }
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9; // 1로 해보고, 사이드바는 z-index 10으로 해봄.
+  background-color: rgba(0, 0, 0, 0.75);
+
+  width: 100%;
+}

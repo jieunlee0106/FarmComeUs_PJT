@@ -1,0 +1,71 @@
+$screenHeight: 100vh;
+$upperCardHeight: 20%;
+
+.screen {
+  height: $screenHeight;
+}
+
+.upperCard {
+  // height: $upperCardHeight;
+  padding: 0% 5% 0% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.paddingR5 {
+  padding-right: 5%;
+}
+
+.backButton {
+  //   height: 56px;
+  font-size: 24px;
+  font-weight: bold;
+  align-self: center;
+  margin-right: 2%;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.orderlength {
+  align-self: flex-end;
+  margin-top: 10%;
+}
+
+.flexR {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.orderinfo {
+  color: #555555;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.orderInfoMt {
+  margin-top: 2%;
+}
+
+.orderLength {
+  margin-bottom: 2.5%;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+
+  .noItem {
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,28 @@
+.LiveTab {
+  width: 100%;
+  font-size: 1.25rem;
+  font-family: "NanumSquareRoundB";
+  padding: 20px 20px 5px 20px;
+  border-bottom: 1px solid #cccccc;
+
+  a {
+    margin-right: 16px;
+    box-sizing: border-box;
+
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+
+    &.active {
+      color: black;
+
+      .highlight {
+        color: red;
+      }
+    }
+
+    &:not(.active) {
+      color: #777;
+    }
+  }
+}

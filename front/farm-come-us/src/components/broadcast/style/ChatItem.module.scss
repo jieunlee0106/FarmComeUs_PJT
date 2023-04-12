@@ -1,0 +1,17 @@
+.chatItem {
+  padding: 0px;
+  display: flex;
+  width: 100%;
+
+  p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "NanumSquareRoundB";
+
+    span {
+      margin-right: 8px;
+      color: #ccc;
+    }
+  }
+}

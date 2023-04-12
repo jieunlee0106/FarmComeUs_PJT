@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  aspect-ratio: 5/3;
+  background: #cccccc;
+
+  .imgfilter {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 5/3;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 2;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 5/3;
+    z-index: 1;
+  }
+
+  .headerdes {
+    aspect-ratio: 5/3;
+    position: relative;
+    padding: 1rem;
+    z-index: 3;
+
+    .storename {
+      margin-top: 20px;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    .prtext {
+      width: 85%;
+      margin-top: 8px;
+      float: right;
+      color: white;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .headerbottom {
+      width: calc(100% - 32px);
+      position: absolute;
+      bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+
+      .pickbutton {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.active {
+          background: #f7863b;
+        }
+
+        .heart {
+          width: 80%;
+          height: 80%;
+
+          &.active {
+            color: white;
+          }
+        }
+      }
+
+      .bottomtext {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .address {
+          font-size: 12px;
+          color: white;
+          text-align: right;
+        }
+
+        .phonenumber {
+          margin-top: 4px;
+          font-size: 12px;
+          color: white;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.infoBox {
+  width: 100%;
+
+  .title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 16px;
+    margin: 8px 0 8px 0;
+  }
+
+  .badgeList {
+    display: flex;
+  }
+}

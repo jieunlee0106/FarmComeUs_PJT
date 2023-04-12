@@ -1,0 +1,148 @@
+.screen {
+  display: flex;
+  margin-top: 50px;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centeralign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headertxt {
+  font-size: 2em;
+  margin-top: 12%;
+}
+
+.signUpButton {
+  margin-top: 20px;
+  width: 280px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #265040;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+
+  &:hover {
+    // background-color: #ff8e43;
+    cursor: pointer;
+  }
+}
+
+.loginButton {
+  margin-top: 20px;
+  height: 48px;
+  width: 280px;
+  border-radius: 24px;
+  background-color: #f7863b;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+
+  &:hover {
+    // background-color: #ff8e43;
+    cursor: pointer;
+  }
+}
+
+.inputbar {
+  padding-left: 50px; //추가 된 패딩
+  padding-right: 50px;
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+  height: 48px;
+  border: 2px solid #ccc;
+  background-color: none;
+
+  box-sizing: border-box;
+  margin-top: 3%;
+
+  &:focus {
+    border: 2px solid #ccc;
+  }
+}
+
+.password {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.idicon {
+  margin-top: 16px;
+  margin-left: 12px;
+  color: #ccc;
+  position: absolute;
+  font-size: 30px;
+}
+
+.pwicon {
+  margin-top: 9px;
+  margin-left: 12px;
+  color: #ccc;
+  position: absolute;
+  font-size: 30px;
+}
+
+.smallicon {
+  position: absolute;
+  color: #ccc;
+  right: 5%;
+  font-size: 1.2rem;
+  top: 24px;
+}
+
+.marginSpacing20px {
+  margin-top: 20px;
+}
+.marginSpacing16px {
+  margin-top: 16px;
+}
+
+.marginSpacing_ratio {
+  margin-top: 15%;
+}
+
+.vibration {
+  animation: vibration 0.07s infinite;
+  color: red;
+}
+
+@keyframes vibration {
+  from {
+    transform: rotate(1deg);
+  }
+  to {
+    transform: rotate(-1deg);
+  }
+}
+
+// 수정 필요 -> 색깔 빨간색으로 변하게 하고 싶은데 안되네?, 눈가리는거 왜 password안에 안들어가나?
+
+.errMessage {
+  position: absolute;
+  margin-top: 1px;
+  color: red;
+  letter-spacing: 0px;
+  right: 0px;
+  margin-right: 15%;
+  text-align: right;
+}

@@ -1,0 +1,10 @@
+.infoList {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 10px;
+  list-style: none;
+
+  .infoItem {
+    margin-bottom: 16px;
+  }
+}

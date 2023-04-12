@@ -1,0 +1,89 @@
+.infoContainer {
+  width: 75%;
+  bottom: 0px;
+
+  .productCaption {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 0.8rem;
+
+    .storeInfo {
+      font-size: 0.8rem;
+      margin-bottom: 5px;
+      font-family: "NanumSquareRoundB";
+      font-weight: 600;
+      width: 100%;
+
+      p {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0;
+        padding: 0;
+
+        .subfix {
+          color: #f7863b;
+        }
+      }
+    }
+
+    .productTitle {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    .liveInfo {
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 0.8rem;
+
+      .discount {
+        color: red;
+        margin-right: 5px;
+      }
+    }
+
+    &:not(:hover) .liveTitle {
+      text-overflow: ellipsis;
+    }
+
+    &:not(:hover) .productInfo {
+      text-overflow: ellipsis;
+    }
+
+    &:hover,
+    &:focus {
+      // .storeInfo {
+      //   p {
+      //     display: inline-block;
+      //     animation-name: scroll-text;
+      //     animation-duration: 7s;
+      //     animation-timing-function: linear;
+      //     animation-delay: 0s;
+      //     animation-iteration-count: infinite;
+      //     animation-direction: normal;
+      //   }
+      // }
+
+      .liveTitle {
+        .text {
+          display: inline-block;
+          animation-name: scroll-text;
+          animation-duration: 7s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .titleBox {
+    display: flex;
+    align-items: center;
+
+    .title {
+      margin-left: 10px;
+      font-family: "NanumSquareRoundB";
+      font-size: 1.4rem;
+    }
+  }
+
+  .more {
+    font-size: 0.9rem;
+    margin-right: 8px;
+    font-family: "NanumSquareRoundR";
+
+    &:hover {
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}

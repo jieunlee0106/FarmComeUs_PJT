@@ -1,0 +1,98 @@
+.container {
+  border-top: 1px solid #cccccc;
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  .buttonSpace {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button {
+      width: 1.25rem;
+      height: 1.25rem;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+
+      &.active {
+        background: #f7863b;
+      }
+
+      .checkIcon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    }
+  }
+
+  .imgSpace {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 5px;
+    }
+  }
+
+  .itemDes {
+    width: 70%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .topSpace {
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+
+    .middleSpace {
+      display: flex;
+      justify-content: space-between;
+
+      .option {
+        display: flex;
+        align-items: flex-end;
+      }
+      .secondSpace {
+        display: flex;
+
+        .discount {
+          font-size: 1rem;
+          font-weight: bold;
+          color: #ff0000;
+        }
+
+        .price {
+          margin-left: 0.5rem;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #cccccc;
+          text-decoration: line-through;
+        }
+      }
+    }
+
+    .bottomSpace {
+      display: flex;
+      justify-content: flex-end;
+
+      .discountPrice {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

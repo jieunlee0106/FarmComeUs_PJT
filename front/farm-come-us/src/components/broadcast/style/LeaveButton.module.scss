@@ -1,0 +1,13 @@
+.btnLeave {
+  width: 200px;
+  background-color: red;
+  height: 48px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: rgb(237, 1, 1);
+    cursor: pointer;
+  }
+}

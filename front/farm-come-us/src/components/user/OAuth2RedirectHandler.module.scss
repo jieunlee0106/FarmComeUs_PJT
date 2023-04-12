@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingTxt {
+  font-size: 24px;
+  color: #ccc;
+  font-weight: bolder;
+}

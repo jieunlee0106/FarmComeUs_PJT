@@ -1,0 +1,48 @@
+.itemContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: "";
+    width: 95%;
+    height: 2px;
+    background: #f7863b;
+    transform: scale(0, 1);
+    transform-origin: top center;
+    transition: transform 0.3s;
+  }
+
+  &.active::after {
+    transform-origin: center top;
+    transform: scale(1, 1);
+  }
+
+  .label {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  .itemInput {
+    color: #555;
+    width: calc(100% - 16px);
+    text-overflow: ellipsis;
+
+    &:focus {
+      border-bottom: 1px solid #ccc;
+    }
+
+    &.active:focus {
+      border-bottom: 1px solid #265040;
+      font-weight: 600;
+    }
+  }
+}

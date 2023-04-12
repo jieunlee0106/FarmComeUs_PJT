@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px;
+}
+
+.mt {
+  margin-top: 1%;
+}
+
+.rowflexbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.rowedgeflexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.orderId {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.orderDescription {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #555555;
+}
+
+.widthFull {
+  width: 30%;
+}
+
+.cost {
+  color: #f7863b;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.ordertime {
+  font-weight: bold;
+  color: #555555;
+}

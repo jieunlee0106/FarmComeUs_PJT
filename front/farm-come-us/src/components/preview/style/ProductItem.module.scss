@@ -1,0 +1,66 @@
+.productItem {
+  width: 95%;
+  padding: 5px;
+
+  .productCard {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    margin-bottom: 20px;
+
+    img {
+      height: 60%;
+      display: block;
+      object-fit: cover;
+      background-color: #ccc;
+    }
+
+    .productInfo {
+      width: 100%;
+      height: 40%;
+      padding: 10px;
+      position: relative;
+      font-weight: 600;
+    }
+
+    .productName {
+      width: 100%;
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .priceInfo {
+      width: 100%;
+      span {
+        font-size: 0.9rem;
+      }
+
+      .discount {
+        color: red;
+        margin-right: 10px;
+      }
+    }
+
+    .storeInfo {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      color: #f7863b;
+
+      span {
+        font-size: 0.8rem;
+      }
+
+      .storeName {
+        color: #000;
+      }
+    }
+  }
+}

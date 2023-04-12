@@ -1,0 +1,72 @@
+#app {
+  margin: 0 auto;
+  width: 100%;
+  // max-width: 430px;
+  min-width: 360px;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  /* 테스트 용 border */
+  border-radius: 10px;
+  position: absolute;
+}
+
+.mainHeader {
+  z-index: 10;
+}
+
+.mainContainer {
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh - 56px);
+  top: 56px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  z-index: 10;
+}
+
+.mainContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.sideContainer {
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+}
+
+.sideMenu {
+  position: absolute;
+  top: 56px;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 344px; // 430의 80%
+  z-index: 10; // backdrop보다 앞으로 튀어나와야하니..
+  background-color: white;
+  transition: 0.3s ease-in-out; // 나갈때만 슬라이드 해도 됨. 일단 둘다 해놨음.
+  &.closed {
+    transform: translateX(10%);
+  }
+  &.open {
+    transform: translateX(0%);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  z-index: 1; // backdrop보다 앞으로 튀어나와야하니..
+  background-color: white;
+  transition: 0.3s ease-in-out; // 나갈때만 슬라이드 해도 됨. 일단 둘다 해놨음.
+  &.closed {
+    transform: translateX(100%);
+  }
+  &.open {
+    transform: translateX(0);
+  }
+}

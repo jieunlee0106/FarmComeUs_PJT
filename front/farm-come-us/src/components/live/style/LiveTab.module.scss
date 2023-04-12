@@ -1,0 +1,50 @@
+.LiveTab {
+  width: 100%;
+  font-size: 1rem;
+  font-family: "NanumSquareRoundB";
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 5px;
+
+  a {
+    margin-right: 16px;
+    box-sizing: border-box;
+
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+
+    &::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 3px;
+      background: red;
+      transform: scale(0, 1);
+      transform-origin: top center;
+      transition: transform 0.3s;
+    }
+
+    &.active::after {
+      transform-origin: center top;
+      transform: scale(1, 1);
+    }
+
+    &.active {
+      color: black;
+
+      .highlight {
+        color: red;
+      }
+    }
+
+    &:not(.active) {
+      color: #777;
+    }
+
+    span {
+      font-size: 1.2rem;
+    }
+  }
+}

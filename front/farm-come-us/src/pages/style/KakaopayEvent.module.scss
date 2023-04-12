@@ -1,0 +1,27 @@
+// .buttonspace{
+
+// }
+
+// .button{
+
+// }
+
+.buttonspace {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button {
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f9e000;
+    color: black;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

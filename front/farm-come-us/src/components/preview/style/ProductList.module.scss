@@ -1,0 +1,35 @@
+.productList {
+  width: calc(100% - 20px);
+  display: flex;
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+  overflow-x: scroll;
+
+  .itemContainer {
+    width: 50%;
+    max-width: 280px;
+    padding: 4px;
+    flex-shrink: 0;
+
+    .itemCard {
+      width: 100%;
+    }
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
+
+  .noData {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+}

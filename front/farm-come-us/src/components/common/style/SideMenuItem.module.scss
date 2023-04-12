@@ -1,0 +1,42 @@
+.sideMenuItem {
+  padding: 8px 0;
+  // color: white;
+  width: 100%;
+  height: 72px;
+
+  &:visited {
+    color: wheat;
+    transition: color 0.2s ease;
+    box-shadow: 0px 2px 4px black;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(250, 250, 250);
+  }
+}
+
+.flexWrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.imgWrapper {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-left: 16px;
+}
+
+.iconImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemTxt {
+  margin-left: 16px;
+  font: bold; //bold 왜 안먹는지 모르겠음. 수정필요
+  color: black;
+}

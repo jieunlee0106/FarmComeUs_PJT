@@ -1,0 +1,64 @@
+.titleContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+  color: #fff;
+  padding-left: 16px;
+  font-weight: 600;
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .title {
+    margin-left: 8px;
+
+    span {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.btnList {
+  color: #fff;
+  position: relative;
+  top: 1px;
+
+  .btn {
+    margin-right: 24px;
+    font-size: 1.4rem;
+
+    & + .red {
+      color: red;
+    }
+
+    &:hover {
+      color: #eee;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: red;
+    }
+  }
+}
+
+.closeBtn {
+  color: #fff;
+  position: absolute;
+  right: 16px;
+  font-size: 1.4rem;
+
+  &:hover {
+    font-weight: 600;
+  }
+
+  svg {
+    color: #fff;
+  }
+}

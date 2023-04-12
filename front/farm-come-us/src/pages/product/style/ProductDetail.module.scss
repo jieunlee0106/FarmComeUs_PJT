@@ -1,0 +1,218 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 56px);
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+
+  .loading {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    height: 56px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      font-size: 1.2rem;
+    }
+
+    div {
+      a {
+        font-size: 1.2rem;
+
+        span {
+          font-size: 1rem;
+          color: #f7863b;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .imagecard {
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .productname {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+    text-align: right;
+  }
+
+  .productscript {
+    margin-top: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .option {
+    margin-top: 1.5rem;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .discountspace {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .salepercent {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ff0000;
+      }
+
+      .originalprice {
+        color: #cccccc;
+        text-decoration: line-through;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .saleprice {
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .selectamount {
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;
+      position: absolute;
+      right: 0px;
+      display: flex;
+
+      .firstblock {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .secondblock {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .thirdblock {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .finalprice {
+    margin-top: 0.5rem;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+    .firstblock {
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .secondblock {
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 10px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .thirdblock {
+      font-weight: bold;
+      width: 12px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+  }
+
+  .buttonspace {
+    width: 90%;
+    position: absolute;
+    bottom: 32px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    .cartbutton {
+      width: 48px;
+      height: 48px;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid #f7863b;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .carticon {
+        font-size: 24px;
+        color: #f7863b;
+      }
+    }
+
+    .buybutton {
+      width: calc(100% - 48px - 16px);
+      height: 48px;
+      border-radius: 5px;
+      background-color: #f7863b;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      .buybuttonlink {
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

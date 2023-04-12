@@ -1,0 +1,85 @@
+$heartsize: 2rem;
+
+.card {
+  display: flex;
+  flex-direction: row;
+  //   padding: 3%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  // flex-basis: 45%;
+  // width: 45%;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.rowflexbox {
+  display: flex;
+  flex-direction: row;
+  //   margin: 3%;
+}
+.colflexbox {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 3% 4% 3%;
+}
+
+.imgWrapper {
+  // aspect-ratio: 3/4; // 😀 이게 없으면 이미지 크기에 따라 레이아웃 바뀌는지 확인필요.
+  // width: 45%;
+  flex-basis: 40%;
+
+  flex-grow: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: black;
+  margin: -4% 0% 10% 0%;
+}
+
+.description {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #555555;
+}
+
+.fullwidth {
+  white-space: nowrap;
+  margin-right: 3%;
+}
+
+.heartsize {
+  font-size: $heartsize;
+  align-self: flex-end;
+  float: right;
+  transform: scale(0.75);
+  transition: all 4s;
+  margin-top: 0;
+  display: inline;
+}
+
+.filledheart {
+  color: #fd1d1d;
+
+  // transform: scale(0.75);
+  // transition: all 4s;
+
+  // color: white;
+  // border: black 1px;
+}
+
+.emptyheart {
+  color: #ccc;
+  // font-size: 0.75 * $heartsize;
+}

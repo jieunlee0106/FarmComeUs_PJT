@@ -1,0 +1,35 @@
+.loadingBox {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 24px auto;
+
+  div {
+    width: 16px;
+    height: 16px;
+    background-color: rgb(11, 169, 213);
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-down;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .two {
+    animation-delay: 0.3s;
+  }
+
+  .three {
+    animation-delay: 0.6s;
+  }
+}
+
+@keyframes up-and-down {
+  to {
+    opacity: 0.2;
+    transform: translateY(-20px);
+  }
+}

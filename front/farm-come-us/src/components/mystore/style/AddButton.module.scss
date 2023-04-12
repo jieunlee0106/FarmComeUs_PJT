@@ -1,0 +1,15 @@
+.btnAdd {
+  color: #f7863b;
+  font-size: 3rem;
+  transition: all 0.6s ease;
+  z-index: 1;
+
+  &:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  &:active {
+    color: #f7863b;
+  }
+}

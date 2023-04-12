@@ -1,0 +1,32 @@
+.modal {
+  .myProducts {
+    width: 100%;
+    padding: 10px;
+
+    .productList {
+      padding: 10px;
+      width: 95%;
+      border-radius: 5px;
+
+      &:focus {
+        outline: none;
+      }
+
+      option {
+        padding: 10px;
+        height: 30px;
+      }
+    }
+  }
+
+  .form {
+    .btnRegist {
+      width: 90%;
+      margin: 0px auto;
+      background-color: #f7863b;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+  }
+}

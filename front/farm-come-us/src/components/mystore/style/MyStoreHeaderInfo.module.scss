@@ -1,0 +1,20 @@
+.infoContainer {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 20px;
+
+  .storeName {
+    font-size: 1.4rem;
+    margin: 10px 0 20px 0;
+  }
+
+  .storeDesc {
+    width: 80%;
+    text-align: right;
+    font-size: 1.02rem;
+    word-break: keep-all;
+    margin: 0;
+  }
+}

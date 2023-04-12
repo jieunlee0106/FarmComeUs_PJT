@@ -1,0 +1,11 @@
+.backdrop {
+  position: absolute;
+  top: 55px;
+  width: 100%;
+  height: calc(100vh - 54px);
+
+  z-index: 2; // 1로 해보고, 사이드바는 z-index 10으로 해봄.
+  background-color: rgba(0, 0, 0, 0.75);
+
+  transition: 0.2s ease-in; // 적용해보고 수정
+}

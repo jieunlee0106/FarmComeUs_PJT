@@ -1,0 +1,36 @@
+.flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #f7863b;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 1000;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 1000;
+  margin-left: 6%;
+  margin-top: 7%;
+  margin-bottom: 2%;
+}
+
+.input {
+  margin-left: 6%;
+
+  width: 88%;
+}

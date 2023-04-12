@@ -1,0 +1,150 @@
+.container {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .title {
+    padding: 15px 0px;
+    height: 56px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .paymentcard {
+    padding: 0px;
+    margin-bottom: 16px;
+
+    .cardheader {
+      padding: 8px 5px;
+      height: 35px;
+      border-bottom: solid 1px #eeeeee;
+      font-size: 16px;
+      font-weight: bolder;
+    }
+
+    .cardscript {
+      padding: 8px 5px;
+
+      .username {
+        font-size: 14px;
+      }
+
+      .userphonenumber {
+        margin-top: 4px;
+        font-size: 14px;
+      }
+
+      .useraddress {
+        margin-top: 4px;
+        font-size: 14px;
+      }
+
+      .storename {
+        font-weight: bold;
+      }
+
+      .productname {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .option {
+        margin-top: 2px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .options {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .price {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .shippingfee {
+      padding: 8px 5px;
+      height: 35px;
+      border-top: solid 1px #eeeeee;
+      border-bottom: solid 1px #eeeeee;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .defaultscript {
+        font-size: 16px;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .price {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .bill {
+      padding: 8px 5px;
+      height: 35px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .defaultscript {
+        font-size: 16px;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .price {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .foot {
+    margin-top: 9rem;
+
+    .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .buttonspace {
+      margin: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .button {
+        width: 80%;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #f9e000;
+        color: black;
+        font-weight: bold;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

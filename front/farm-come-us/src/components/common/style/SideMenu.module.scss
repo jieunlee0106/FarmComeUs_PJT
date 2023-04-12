@@ -1,0 +1,187 @@
+// 적용안되고있음. 수정 필요
+.sideMenu {
+  position: fixed;
+  top: 56px;
+  right: -1px;
+  bottom: 0;
+  width: 80%;
+  max-width: 344px; // 430의 80%
+  height: calc(100vh - 56px);
+  z-index: 10; // backdrop보다 앞으로 튀어나와야함
+  color: white;
+  background-color: white;
+  transition: 0.3s ease-in-out; // 나갈때만 슬라이드 해도 됨. 일단 둘다 해놨음.
+
+  &.closed {
+    transform: translateX(100%);
+  }
+  &.open {
+    transform: translateX(0);
+  }
+
+  .sideBackdrop {
+    z-index: 9;
+  }
+}
+
+.profileContainer {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 8px 0px;
+}
+
+.profileBox {
+  background-color: #f7863b;
+  z-index: 20;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+
+  .txtLogin {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+}
+
+.profileTxtBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.nickname {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.email {
+  font-size: 1rem;
+}
+
+.circleBox {
+  width: 72px;
+  height: 72px;
+  border-radius: 70%;
+  overflow: hidden;
+  border: 2px white;
+  box-shadow: 0px 2px 4px black;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.profileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noProfileImg {
+  font-size: 6rem;
+}
+
+.sideMenuItemsWrapper {
+  // margin-top: 8px;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sideMenuUpperWrapper {
+  margin-top: 8px;
+  background-color: white;
+  height: 40%;
+}
+
+.sideMenuBottomWrapper {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 12%;
+
+  .logoutWrapper {
+    background-color: white;
+  }
+
+  .sideMenuItem {
+    padding: 8px 0px;
+    // color: white;
+    width: 100%;
+    height: 48px;
+    display: flex;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(250, 250, 250);
+    }
+
+    .imgWrapper {
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      margin-left: 16px;
+      bottom: 24px;
+    }
+
+    .iconImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logout {
+      margin-left: 16px;
+      font: bold; //bold 왜 안먹는지 모르겠음. 수정필요
+      color: black;
+      width: 400px;
+    }
+  }
+}
+
+.sideMenuItem {
+  padding: 8px 0;
+
+  // color: white;
+  width: 100%;
+  height: 48px;
+
+  &:visited {
+    color: wheat;
+    transition: color 0.2s ease;
+    box-shadow: 0px 2px 4px black;
+  }
+}
+
+.flexWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.imgWrapper {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-left: 16px;
+}
+
+.iconImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemTxt {
+  margin-left: 16px;
+  font: bold; //bold 왜 안먹는지 모르겠음. 수정필요
+  color: black;
+}
